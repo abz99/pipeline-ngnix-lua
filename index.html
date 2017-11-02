@@ -9,18 +9,21 @@
 
       <p>Deployment done in jenkins with Jenkinsfile.</p>
 
-      Pipline:
-      <nl>
+      <p>Pipline:
+      <ol>
       <li>Build nginx v.1.13.6 with lua-nginx-module v.0.10.11rc2</li>
       <li>Build docker image with custom nginx.conf and index.html from github <a href='https://github.com/abz99/pipeline-ngnix-lua'>repo</a>,
         pushing docker image to the public repo at <a href='https://hub.docker.com/r/corvuscoraxx/nginx/'>hub.docker.com</a></li>
       <li>Deployment of the docker image with helm chart at kubernetes cluster</li>
-      </nl>
+      </ol>
+      </p>
+      <p>Notes:
       <ul>
       <li>Code published at github <a href='https://github.com/abz99/pipeline-ngnix-lua'>repo</a>.</li>
       <li>Jenkins build task is triggered by git push into the master.</li>
       <li>Jenkins server <a href='http://130.211.18.211'>http://130.211.18.211</a>.</li>
       </ul>
+      </p>
 
   </body>
 </html>
