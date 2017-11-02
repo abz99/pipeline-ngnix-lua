@@ -4,6 +4,19 @@
   </head>
   <body bgcolor=white>
       <h2>Hi Team!</h2>
-      <h3>This is a test task from Andriy Zhmaylo</h3>
+      <h3>This is a test task for OpsWorks Inc. from Andriy Zhmaylo</h3>
+      Nginx deployment in kubernetes with helm.
+
+      Deployment done in jenkins with Jenkinsfile.
+
+      Pipline:
+      1. Build nginx v.1.13.6 with lua-nginx-module v.0.10.11rc2
+      2. Build docker image with custom nginx.conf and index.html from github repo (https://github.com/abz99/pipeline-ngnix-lua), pushing docker image to the public repo at hub.docker.com (https://hub.docker.com/r/corvuscoraxx/nginx/)
+      3. Deployment of the docker image with helm chart at kubernetes cluster 
+
+      Code published at github https://github.com/abz99/pipeline-ngnix-lua.
+      Jenkins build task is triggered by git push into the master.
+      Jenkins server http://130.211.18.211
+
   </body>
 </html>
