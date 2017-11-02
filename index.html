@@ -5,18 +5,22 @@
   <body bgcolor=white>
       <h2>Hi Team!</h2>
       <h3>This is a test task for OpsWorks Inc. from Andriy Zhmaylo</h3>
-      Nginx deployment in kubernetes with helm.
+      <h4>Nginx deployment in kubernetes with helm.</h4>
 
-      Deployment done in jenkins with Jenkinsfile.
+      <p>Deployment done in jenkins with Jenkinsfile.</p>
 
       Pipline:
-      1. Build nginx v.1.13.6 with lua-nginx-module v.0.10.11rc2
-      2. Build docker image with custom nginx.conf and index.html from github repo (https://github.com/abz99/pipeline-ngnix-lua), pushing docker image to the public repo at hub.docker.com (https://hub.docker.com/r/corvuscoraxx/nginx/)
-      3. Deployment of the docker image with helm chart at kubernetes cluster 
-
-      Code published at github https://github.com/abz99/pipeline-ngnix-lua.
-      Jenkins build task is triggered by git push into the master.
-      Jenkins server http://130.211.18.211
+      <nl>
+      <li>Build nginx v.1.13.6 with lua-nginx-module v.0.10.11rc2</li>
+      <li>Build docker image with custom nginx.conf and index.html from github <a href='https://github.com/abz99/pipeline-ngnix-lua'>repo</a>,
+        pushing docker image to the public repo at <a href='https://hub.docker.com/r/corvuscoraxx/nginx/'>hub.docker.com</a></li>
+      <li>Deployment of the docker image with helm chart at kubernetes cluster</li>
+      </nl>
+      <ul>
+      <li>Code published at github <a href='https://github.com/abz99/pipeline-ngnix-lua'>repo</a>.</li>
+      <li>Jenkins build task is triggered by git push into the master.</li>
+      <li>Jenkins server <a href='http://130.211.18.211'>http://130.211.18.211</a>.</li>
+      </ul>
 
   </body>
 </html>
